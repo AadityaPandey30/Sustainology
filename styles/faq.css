@@ -1,0 +1,24 @@
+.top-left {
+    background: url('../public/faq-left-vector.png');
+    height: 555.25px;
+    width: 888.66px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bottom-left {
+    background: url('../public/faq-right-vector.png');
+    height: 100vh;
+    width: 781.66px;
+    position: fixed;
+
+    right: 0;
+    top: 0;
+    z-index: -2;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

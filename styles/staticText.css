@@ -1,0 +1,66 @@
+.static-text {
+    /* Create the parallax scrolling effect with gradient background */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Gradient background */
+    background-image: linear-gradient(
+        180deg,
+        #ffffff 11.1%,
+        #ecf4e2 44.97%,
+        #ffffff 88.96%
+    );
+}
+
+.content p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #666666;
+    margin-bottom: 28px;
+}
+@media only screen and (max-width: 767px) {
+    .content p {
+        margin-bottom: 20px;
+    }
+}
+
+.content ul {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    padding-left: 16px;
+    color: #666666;
+    margin-bottom: 28px;
+    list-style: initial;
+}
+
+.content strong {
+    text-decoration: underline;
+}
+
+.content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.39px;
+    color: #666666;
+    margin-bottom: 28px;
+    margin-top: 60px;
+}
+@media only screen and (max-width: 767px) {
+    .content h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 41.39px;
+    }
+}
+
+.content h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #666666;
+    margin-bottom: 12px;
+}

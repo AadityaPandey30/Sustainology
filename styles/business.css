@@ -1,0 +1,540 @@
+.bg-img-business {
+    height: 752px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(
+            92.43% 50% at 50% 50%,
+            rgba(10, 22, 33, 0.94) 0%,
+            rgba(17, 54, 23, 0.57) 0%,
+            rgba(14, 54, 20, 0.94) 0.01%,
+            rgba(14, 45, 11, 0.71) 100%
+        ),
+        url('../public/business-banner.png');
+}
+
+.banner-container {
+    width: 100%;
+    height: 752px;
+}
+
+.consultancy-bg {
+    background: linear-gradient(
+            90.72deg,
+            #192741 2.24%,
+            rgba(25, 39, 65, 0.8) 33.01%,
+            rgba(42, 60, 91, 0) 95.74%,
+            rgba(51, 73, 111, 0.91) 95.74%,
+            #192741 2.24%
+        ),
+        url('../public/consultancy-bg.png');
+    background-size: calc(100% - 110px);
+    background-repeat: no-repeat;
+}
+
+.consultancy-img-side-button {
+    background: url('../public/consultancy-bg-right.png');
+    width: 163px;
+}
+
+.consultancy-img-side-button::before {
+    content: '';
+    border-left: 1px solid #fefefd;
+    height: 141px;
+    display: inline-block;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 90px;
+}
+.consultancy-side-button::before {
+    content: '';
+    border-left: 1px solid #a5b594;
+    height: 141px;
+    display: inline-block;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 90px;
+}
+
+.decarbon-bg-1 {
+    background: radial-gradient(
+        78.42% 41.2% at 81.96% 57.45%,
+        #dce0e7 0%,
+        rgba(246, 249, 242, 0) 100%
+    );
+}
+
+.decarbon-bg-2 {
+    background: radial-gradient(
+        64.56% 43.98% at 67.48% 56.13%,
+        #d5e4c4 0%,
+        rgba(246, 249, 242, 0) 100%
+    );
+}
+
+.unlocking-container {
+    background: url('../public/images/business/decarbon-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.offset-container {
+    background: url('../public/images/business/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Animation */
+
+/* Cards */
+.cards-section {
+    padding: 80px 0;
+    color: #ff98a2;
+    background: #000;
+}
+
+.cards {
+    height: 70vh;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 50px;
+    border: 1px solid;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    left: 0;
+    top: 0;
+}
+
+/* consultancy */
+.consultancies-section {
+    padding-bottom: 80px;
+    min-height: 90vh;
+}
+
+.consultancies {
+    background-image: url(../public/images/business/business-1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.consultancy {
+    position: absolute;
+    width: 80%;
+    height: 85vh;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid;
+}
+
+.consultancy-1,
+.consultancy-2,
+.consultancy-3 {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.consultancy-1 {
+    background-image: url('../public/images/business/assist1.png');
+    background-size: 105%;
+    background-position: -20px -10px;
+}
+.consultancy-2 {
+    background-image: url('../public/images/business/assist2.png');
+    background-size: 105%;
+    background-position: -20px -10px;
+}
+.consultancy-3 {
+    background-image: url('../public/images/business/assist3.png');
+    background-size: 105%;
+    background-position: -20px -10px;
+}
+.consultancy-4 {
+    background-image: url('../public/images/business/assist4.png');
+    background-size: 105%;
+    background-position: -20px -10px;
+}
+
+/* solution */
+.solutions-section {
+    background: url('../public/images/business/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.solutions {
+    height: 90vh;
+    width: 95%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.solution {
+    position: absolute;
+    width: 100%;
+}
+
+.solution-1,
+.solution-2,
+.solution-3 {
+    left: 0;
+    top: 0;
+}
+
+/* credit */
+.credits-container {
+    background-color: white;
+    min-height: 85vh;
+}
+
+.credits {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.credit {
+    position: absolute;
+    width: 100%;
+}
+
+.credit-1,
+.credit-2,
+.credit-3 {
+    left: 0;
+    top: 0;
+}
+
+.animate-slide-up {
+    animation: slideUp 1.2s ease-in-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.approach-bg {
+    background: url('../public/bussiness-vector-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.our-approach {
+    /* min-height: 100vh; */
+}
+
+.approaches {
+    height: 90vh;
+    width: 95%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.approache {
+    position: absolute;
+    width: 100%;
+}
+
+.approach1,
+.approach2 {
+    left: 0;
+    top: 0;
+}
+
+.border-card {
+    border: 2px solid #ffff;
+}
+
+.border-card:hover {
+    border-color: transparent;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+        101.24deg,
+        #fffb98 5.16%,
+        #c0e8cb 56.21%,
+        #9adcea 101.49%
+    );
+}
+
+/* Environmental */
+.environmentals-bg {
+    background: url('../public/images/business/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.environmentals-section {
+    min-height: 90vh;
+}
+.environmentals {
+    max-height: 100vh !important;
+    height: 95vh !important;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.environmental {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../public/images/business/envbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.envblur {
+    background: url('../public/images/business/envblur.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.environmental-1,
+.environmental-2,
+.environmental-3 {
+    left: 0;
+    top: 0;
+}
+
+.certificate-scroll-container {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.certificate-scrolling-wrapper {
+    display: inline-flex;
+    gap: 94px;
+    align-items: center;
+    animation: scroll-animation 10s infinite linear;
+}
+.certificate-scrolling-wrapper.reverse {
+    display: inline-flex;
+    gap: 94px;
+    align-items: center;
+    animation: scroll-animation 10s infinite linear reverse;
+}
+
+.certificate-scrolling-wrapper img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes scroll-animation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+ul.custom-icons {
+    list-style-type: none; /* Removes the default list-style */
+}
+
+ul.custom-icons li {
+    padding-left: 26px; /* Adds space for the custom icon */
+    position: relative; /* Needed for absolute positioning of the icon */
+}
+
+ul.custom-icons li:before {
+    content: url('../public/li.svg'); /* Adds checkmark before the list item */
+    position: absolute; /* Positions the icon absolutely within the li */
+    left: 0; /* Aligns the icon to the left */
+    top: 4px; /* Aligns the icon to the top */
+    color: green; /* Color of the icon */
+}
+
+ul.custom-icons.icon-dark li:before {
+    filter: brightness(0.2);
+}
+
+/* circular */
+.circulr-container {
+    background-image: url('../public/images/business/circular.png');
+    background-size: cover;
+}
+
+.clearance-container {
+    background: url('../public/images/business/clearance.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* approach */
+
+.decarbon-approach .container {
+    position: relative;
+    margin: auto;
+}
+
+.decarbon-approach .wrapper {
+    height: 500px;
+    position: relative;
+}
+
+.decarbon-approach .item {
+    max-width: 960px;
+    color: #666666;
+    line-height: 29px;
+    font-size: 22px;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.decarbon-approach svg {
+    height: 300px;
+    overflow: visible;
+    width: 300px;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.decarbon-approach .st0 {
+    fill: none;
+    stroke: transparent;
+    stroke-width: 2;
+    stroke-miterlimit: 1;
+}
+
+.decarbon-approach {
+    background: url('../public/images/business/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.approach-section {
+    background: url('../public/images/business/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.approach-wrapper {
+    width: 95%;
+    margin: auto;
+}
+
+.business_bg {
+    height: 790.67px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(
+        78.98% 50% at 50% 50%,
+        rgba(0, 0, 0, 0.88) 0%,
+        rgba(0, 0, 0, 0.55) 100%
+    );
+}
+
+.certification-bg {
+    background-attachment: fixed;
+}
+
+@media only screen and (min-width: 768px) {
+    .decarbon-approach {
+        min-height: 80vh !important;
+    }
+    .approaches {
+        height: 65vh;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    .decarbon-approach {
+        min-height: 59vh !important;
+    }
+    .approaches {
+        height: 51vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .decarbon-approach {
+        min-height: 100vh !important;
+    }
+    .approaches {
+        height: 80vh;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .decarbon-approach {
+        min-height: 85vh !important;
+    }
+    .approaches {
+        height: 80vh;
+    }
+}

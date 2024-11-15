@@ -1,0 +1,35 @@
+name: sustainology-web-deploy
+on:
+  push:
+    branches:
+    - prod
+env:
+  CI: false
+jobs:
+  deploy-job:
+    runs-on: [self-hosted,sus-web]
+
+    steps:
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.20.0
+      
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js dependencies
+        run: npm install
+
+      - name: Load Environment Variables
+        run: |
+          touch .env
+          echo "${{ secrets.SUS_WEB_ENV }}" > .env
+          cat .env
+
+      - name: Build
+        run: npm run build 
+        
+      - name: Restart Application
+        run: pm2 restart sustainology-web

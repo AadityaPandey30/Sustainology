@@ -1,0 +1,7 @@
+.footer {
+    background-color: #182c1c;
+}
+
+.footer .footer-bg-img  {
+    background-image: url('../public/images/footer_bg.png');
+}

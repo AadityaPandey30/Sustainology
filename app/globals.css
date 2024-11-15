@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+/* Styles for scrollbar */
+::-webkit-scrollbar {
+    width: 6px; /* Set width of the scrollbar */
+}
+
+/* Handle for vertical scrollbar */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5); /* Set color of the scrollbar handle */
+    border-radius: 3px; /* Set border radius of the scrollbar handle */
+}
+
+/* Track for vertical scrollbar */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Set color of the scrollbar track */
+}
+
+/* Handle for horizontal scrollbar */
+::-webkit-scrollbar-thumb:horizontal {
+    background: rgba(0, 0, 0, 0.5); /* Set color of the scrollbar handle */
+    border-radius: 3px; /* Set border radius of the scrollbar handle */
+}
+
+/* Track for horizontal scrollbar */
+::-webkit-scrollbar-track:horizontal {
+    background: rgba(0, 0, 0, 0.1); /* Set color of the scrollbar track */
+}
+
+/* Change opacity on hover for both vertical and horizontal scrollbar */
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background: rgba(0, 0, 0, 0.8); /* Change handle opacity on hover */
+}
+
+.header-gradient {
+    background-image: radial-gradient(
+        107.23% 53.01% at 50% 46.99%,
+        rgba(180, 180, 180, 0.17) 0%,
+        rgba(191, 191, 191, 0.33) 100%
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.sidebar-active {
+    background-color: #33496f;
+    border: 1px solid #c8c8c8;
+    color: #ffffff;
+}
+
+.slick-arrow.slick-next {
+    top: 23% !important;
+}
+
+.slick-arrow.slick-prev {
+    top: 23% !important;
+}
+/* @media screen and (min-width: 1920px) {
+    h1 {
+        font-size: 100px !important;
+        line-height: 120px !important;
+    }
+    h2 {
+        font-size: 80px !important;
+        line-height: 104.42px !important;
+    }
+    h3 {
+        font-size: 68px !important;
+        line-height: 92.21px !important;
+    }
+    h4 {
+        font-size: 56px !important;
+        line-height: 80px !important;
+    }
+    h5 {
+        font-size: 44px !important;
+        line-height: 64px !important;
+    }
+    p {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+    a {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+    ul {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+    li {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+
+    button {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+}
+@media screen and (min-width: 2560px) {
+    h1 {
+        font-size: 80px !important;
+        line-height: 104.42px !important;
+    }
+    h2 {
+        font-size: 68px !important;
+        line-height: 92.21px !important;
+    }
+    h3 {
+        font-size: 56px !important;
+        line-height: 80px !important;
+    }
+    h4 {
+        font-size: 44px !important;
+        line-height: 64px !important;
+    }
+    h5 {
+        font-size: 32px !important;
+        line-height: 48px !important;
+    }
+    p {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+    a {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+    ul {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+    li {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+
+    button {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+}
+@media screen and (min-width: 3840px) {
+    h1 {
+        font-size: 100px !important;
+        line-height: 120px !important;
+    }
+    h2 {
+        font-size: 88px !important;
+        line-height: 112px !important;
+    }
+    h3 {
+        font-size: 76px !important;
+        line-height: 96px !important;
+    }
+    h4 {
+        font-size: 64px !important;
+        line-height: 88px !important;
+    }
+    h5 {
+        font-size: 52px !important;
+        line-height: 72px !important;
+    }
+    p {
+        font-size: 50px !important;
+        line-height: 40px !important;
+    }
+    a {
+        font-size: 30px !important;
+        line-height: 40px !important;
+    }
+    ul {
+        font-size: 30px !important;
+        line-height: 40px !important;
+    }
+    li {
+        font-size: 30px !important;
+        line-height: 40px !important;
+    }
+
+    button {
+        font-size: 30px !important;
+        line-height: 40px !important;
+    }
+} */

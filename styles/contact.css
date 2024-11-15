@@ -1,0 +1,5 @@
+.contact-bg {
+    background: url('../public/images/contact/gradient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

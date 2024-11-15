@@ -1,0 +1,38 @@
+.blog-content {
+    color: 666666;
+}
+.blog-content p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+@media only screen and (max-width: 767px) {
+    .blog-content p {
+        font-size: 18px; /* Decrease font size for better readability on smaller screens */
+        line-height: 24px; /* Adjust line height accordingly */
+    }
+}
+
+.blog-bg-gd {
+    background: linear-gradient(180deg, #e0ebd4 0%, #ffffff 97.75%);
+}
+.blog-bg {
+    background: url('../public/images/blogs/blog-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom center;
+}
+
+.blog-overview-bg {
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f3fee6 53.94%,
+        #ffffff 100%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom center;
+}

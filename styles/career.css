@@ -1,0 +1,23 @@
+.career-background {
+    background-image: url('../public/careerPageBackground.png');
+    height: 497px;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    /* z-index: -2; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* border: 1px solid #ffffff; */
+    border-radius: 8px;
+    backdrop-filter: blur(64px);
+}
+
+.post-bg-img {
+    background-image: url('../public/career-open-role-background.png');
+    height: 864px;
+    width: 100%;
+    z-index: -2;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

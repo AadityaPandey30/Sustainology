@@ -1,0 +1,301 @@
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+@keyframes marquee2 {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.accreditations-section {
+    background-image: url('../public//images//home/section_bg_1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.anim-bg {
+    background-image: url('../public/images/home/anim.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+}
+
+.accreditations-bg {
+    background-image: url('../public//images//home/acc.png');
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: -5px -10px;
+    height: 330.3px;
+    width:100%;
+}
+.bottom-section {
+    background-image: url('../public//images//home/home-bottom-bg.png');
+    background-size: 115%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.customer-section .scale-110 {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hide partially visible slides */
+.customer-section .slick-track {
+    overflow: hidden;
+}
+
+/* Add styles for your custom arrows */
+.customer-section .slick-prev,
+.customer-section .slick-next {
+    z-index: 1;
+    /* Add more styling as needed */
+}
+.customer-section .slick-prev::before,
+.customer-section .slick-next::before {
+    content: '';
+    /* Add more styling as needed */
+}
+
+.progress-line {
+    position: absolute;
+    width: 10px;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        180deg,
+        #fefefd 6.7%,
+        #96dce5 40.9%,
+        #9dd06b 73.85%,
+        #fcff73 97.24%
+    );
+}
+
+.progress-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes scaleAndRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.image-animation {
+    /* transform: scale(0.6);
+    transition: transform 2s ease-out; */
+}
+
+.logo {
+    transform: scale(0.6);
+    opacity: 0.6;
+    transition: transform 2s;
+}
+
+.logo-scaled {
+    transform: scale(1);
+    transition: transform 2s;
+    animation: scaleAndRotate 15s linear infinite;
+}
+
+.heading-animation {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+/* solution */
+.navigations {
+    height: 80vh;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navigation {
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    box-shadow: 0px 4px 12px 0px #ffffff66;
+}
+
+.navigation-1,
+.navigation-2,
+.navigation-3 {
+    box-shadow: 0px -4px 12px 0px #ffffff75;
+    left: 0;
+    top: 0;
+}
+
+.infinite-scroll {
+    animation: marquee 15s linear infinite;
+}
+.infinite-scroll-2 {
+    animation: marquee2 15s linear infinite;
+}
+
+/* Technology Section */
+
+.technology-wrap-all {
+    position: relative;
+    padding: 0 80px;
+}
+.technology-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.timeline-box {
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    border-radius: 20px;
+}
+
+section.technology-panel {
+    width: 100%;
+    height: 100vh;
+}
+
+.technology-panel {
+    position: relative;
+    z-index: 99;
+}
+
+.technology-wrap {
+    position: relative;
+    top: 50%;
+    width: 40%;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.technology-panel:nth-child(odd) .technology-wrap {
+    left: 60%;
+}
+
+.technology-bg-1,
+.technology-bg-2,
+.technology-bg-3,
+.technology-bg-4,
+.technology-bg-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.technology-bg-1 {
+    background-image: url('../public/images/home/tech1.png');
+}
+.technology-bg-2 {
+    background-image: url('../public/images/home/tech2.png');
+}
+.technology-bg-3 {
+    background-image: url('../public/images/home/tech3.png');
+}
+/* .technology-bg-4 {
+    position: fixed; */
+/* Fixed position to cover the whole screen and stay in place on scrolling */
+/* right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+} */
+/*.technology-bg-4 video {
+    width: 100%;
+    /* Cover the full width */
+/* height: 100%;
+    /* Cover the full height */
+/* object-fit: cover;
+}*/
+
+.technology-bg-4 {
+    background-image: url('../public/images/home/tech4.png');
+}
+.technology-bg-5 {
+    background-image: url('../public/images/home/tech5.png');
+}
+
+.technology-dot {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+    box-shadow: 0px 4px 24px 0px #fbf8dd;
+    box-shadow: 4px 4px 20px 0px #ffffffa3;
+}
+
+.technology-wrap-all::before {
+    content: '';
+    width: 5px;
+    height: 90%;
+    background: linear-gradient(
+        180deg,
+        #fefefd 6.7%,
+        #96dce5 40.9%,
+        #9dd06b 73.85%,
+        #fcff73 97.24%
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+}
+
+.bg-img {
+    height: 790.68px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+            90.24deg,
+            rgba(9, 9, 9, 0.65) 0.22%,
+            rgba(9, 9, 9, 0.65) 0.22%
+        ),
+        url("https://res.cloudinary.com/deels6aft/video/upload/v1720007156/yu6fpecsfxpzxb09k5ic.mp4");
+}
