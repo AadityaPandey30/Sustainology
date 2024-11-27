@@ -2,7 +2,13 @@ import React from 'react';
 import Link from 'next/link';
 import Button from '../common/Button';
 
-const Banner = ({ bannerRef, isDecarbon = false, buttons }) => {
+const Banner = ({
+    bannerRef,
+    isDecarbon = false,
+    isEsg = false,
+    isClimate = false,
+    buttons,
+}) => {
     const stylesBg = {
         height: '790.67px',
         width: ' 100%',
@@ -40,7 +46,7 @@ const Banner = ({ bannerRef, isDecarbon = false, buttons }) => {
                             to pioneer comprehensive sustainability initiatives
                         </p>
                     </span>
-                ) : (
+                ) : isEsg ? (
                     <span className="sm:w-3/4 md:w-2/3  text-white text-center">
                         <h1 className="font-bold md:text-[2.75rem] md:leading-[3.72rem] text-[38px] leading-[2.25rem]">
                             ESG & CIRCULAR ECONOMY SOLUTIONS
@@ -48,6 +54,25 @@ const Banner = ({ bannerRef, isDecarbon = false, buttons }) => {
                         <p className="font-medium md:text-[1.25rem] md:leading-[1.659rem] text-[20px] leading-[1.3rem] mt-6">
                             Forge Your Path to Sustainability with Comprehensive
                             ESG Strategies and Green Innovation
+                        </p>
+                    </span>
+                ) : isClimate ? (
+                    <span className="sm:w-3/4 md:w-2/3  text-white text-center">
+                        <h1 className="font-bold md:text-[2.75rem] md:leading-[3.72rem] text-[38px] leading-[2.25rem]">
+                            Climate API Solutions
+                        </h1>
+                        <p className="font-medium md:text-[1.25rem] md:leading-[1.659rem] text-[20px] leading-[1.3rem] mt-6">
+                            Seamless climate action with advanced API
+                            Integration
+                        </p>
+                    </span>
+                ) : (
+                    <span className="sm:w-3/4 md:w-2/3  text-white text-center">
+                        <h1 className="font-bold md:text-[2.75rem] md:leading-[3.72rem] text-[38px] leading-[2.25rem]">
+                            Carbon Project Consultancy
+                        </h1>
+                        <p className="font-medium md:text-[1.25rem] md:leading-[1.659rem] text-[20px] leading-[1.3rem] mt-6">
+                            Expert guidance for Impactful Carbon Solutions
                         </p>
                     </span>
                 )}

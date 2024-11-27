@@ -262,7 +262,7 @@ const DecarbonApproach = ({ sectionRefs }) => {
                                 Decarbonisation Solutions :
                             </strong>{' '}
                             Utilising insights from our international carbon
-                            removal initiatives, we offer decarbonization
+                            removal initiatives, we offer decarbonisation
                             strategies that minimize carbon footprints and
                             promote eco-friendly innovations.
                         </p>
@@ -310,7 +310,7 @@ const DecarbonApproach = ({ sectionRefs }) => {
                             </strong>{' '}
                             Building on our experience developing blue carbon
                             projects across borders, we accelerate supply chain
-                            decarbonization, implementing practices that reduce
+                            decarbonisation, implementing practices that reduce
                             emissions and foster a sustainable economy.
                         </p>
                     </div>

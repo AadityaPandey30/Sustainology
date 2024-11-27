@@ -44,7 +44,7 @@ const Certificate = () => {
                         <Image
                             loading="lazy"
                             src="/cretificate.png"
-                            alt=""
+                            alt="Carbon Offset Certificate"
                             sizes="100vw"
                             height={249}
                             width={441}

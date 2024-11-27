@@ -122,7 +122,7 @@ const Founders = ({
                                             width={100}
                                             sizes="100vw"
                                             className=" h-full w-full object-cover object-top"
-                                            alt="founder"
+                                            alt={info?.name}
                                             style={{
                                                 mixBlendMode: 'multiply',
                                             }}

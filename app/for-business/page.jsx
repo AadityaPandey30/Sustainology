@@ -9,10 +9,8 @@ import Offset from '../../components/business/Offset';
 import Unlocking from '../../components/business/Unlocking';
 import './../../styles/business.css';
 import Overview from '../../components/business/Overview.jsx';
-import OurApproach from '../../components/business/OurApproach.jsx';
 import Certification from '@/components/business/Certifiction';
 import Simulation from '@/components/business/Simulation';
-import Consulting from '@/components/business/Consulting';
 import Circular from '@/components/business/Circular';
 import useIntersectionObserver from '@/hook/useInerationSidebar';
 import EsgStartegy from '@/components/esg-strategy/strategy';
@@ -28,7 +26,7 @@ export default function Business() {
     useIntersectionObserver(sectionRefs, 0.5);
 
     const buttons = [
-        { label: 'Our Approach', href: '#our-approach' },
+        // { label: 'Our Approach', href: '#our-approach' },
         { label: 'ESG Strategy & Transformation', href: '#busi-2' },
         { label: 'Green Building Solutions', href: '#certification' },
         { label: 'Circular economy Services', href: '#busi-4' },
@@ -53,9 +51,8 @@ export default function Business() {
                 isScrolled={isScrolled}
                 setIsScrolled={setIsScrolled}
             />
-            <Banner bannerRef={bannerRef} buttons={buttons} />
+            <Banner bannerRef={bannerRef} isEsg={true} buttons={buttons} />
             <Overview />
-            <OurApproach sectionRefs={sectionRefs} />
             {!isMobile ? (
                 <ESGConsultancy sectionRefs={sectionRefs} />
             ) : (
@@ -64,7 +61,6 @@ export default function Business() {
             <Environmental />
             <Certification sectionRefs={sectionRefs} />
             <Simulation />
-            <Consulting />
             <Circular sectionRefs={sectionRefs} />
             <Footer />
         </>

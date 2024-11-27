@@ -61,7 +61,7 @@ const UserProfileCarousel = () => {
         <div className=" mt-32 flex justify-center h-1/2">
             {/* <div className="bg-green-500 w-1/2 rounded-t-full"> */}
             <div className="w-24 h-24 rounded-full relative top-3/4 right-64">
-                <img src="/images/founders/ansh-detail.png" />
+                <img src="/images/founders/ansh-detail.png"/>
             </div>
             <div className="w-24 h-24 rounded-full relative top-[40%] right-44">
                 <img src="/images/founders/ansh-detail.png" />

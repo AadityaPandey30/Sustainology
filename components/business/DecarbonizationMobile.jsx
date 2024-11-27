@@ -8,7 +8,7 @@ const DecarbonizationMobile = () => {
             <div className="solutions-container">
                 <div className="w-full">
                     <h3 className="font-extrabold md:text-[52px] md:leading-[3.4rem] text-4xl text-[#33496F] text-center">
-                        Decarbonization and Net Zero Solutions
+                        Decarbonisation and Net Zero Solutions
                     </h3>
                 </div>
 

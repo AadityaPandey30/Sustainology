@@ -50,7 +50,7 @@ const Decarbonization = ({ setShowModal, sectionRefs }) => {
                 <div className="solutions-container">
                     <div className="w-full">
                         <h3 className="font-extrabold text-[52px] leading-[3.4rem] text-[#33496F] text-center pt-10">
-                            Decarbonization and Net Zero Solutions
+                            Decarbonisation and Net Zero Solutions
                         </h3>
                     </div>
                     <div

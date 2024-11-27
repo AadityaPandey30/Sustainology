@@ -68,9 +68,9 @@ const ESGConsultancy = ({ sectionRefs }) => {
         <section className="consultancies-section -mt-24" ref={container}>
             <div id="busi-2" ref={(el) => (sectionRefs.current[1] = el)}></div>
             <div className="mb-10">
-                <h3 className="font-bold text-[2.5rem] leading-[3.4rem] text-[#33496F] text-center">
+                {/* <h3 className="font-bold text-[2.5rem] leading-[3.4rem] text-[#33496F] text-center">
                     Here is how we can assist
-                </h3>
+                </h3> */}
             </div>
             <div className="consultancies">
                 <div className="consultancy consultancy-1">
@@ -257,77 +257,6 @@ const ESGConsultancy = ({ sectionRefs }) => {
                                         risks within operations and value chains
                                         to ensure ethical practices and
                                         compliance.
-                                    </p>
-                                </div>
-
-                                <div className="mt-5 mb-5">
-                                    <Link
-                                        href="contact-us"
-                                        class="px-5 text-xl leading-[1.375rem] font-semibold  py-2 hover:text-[#2F5738] w-1/2 text-white rounded hover:bg-[#FCFDFA] border border-[#2F5738]  bg-[#2F5738]"
-                                    >
-                                        Request Consultation
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="consultancy consultancy-4">
-                    <div className="py-[84px] px-[98px] h-full relative">
-                        <div className="grid lg:grid-cols-8 h-full">
-                            <div className="lg:col-span-6 flex flex-col justify-between">
-                                <div>
-                                    <h4 className="font-bold text-4xl text-[#2A3C5B]">
-                                        Economic, Social Development &
-                                        Governance
-                                    </h4>
-                                    <p className="mt-8 text-lg leading-[1.56rem] font-medium text-[#666666]">
-                                        <strong className="text-[#333333]">
-                                            Economic Planning and Infrastructure
-                                            Policy Advisory-
-                                        </strong>{' '}
-                                        Guiding sustainable economic growth and
-                                        infrastructure development with
-                                        strategic planning and policy
-                                        formulation.
-                                    </p>
-                                    <p className="mt-3 text-lg leading-[1.56rem] font-medium text-[#666666]">
-                                        <strong className="text-[#333333]">
-                                            Human Rights and Social Impact
-                                            Analysis -
-                                        </strong>{' '}
-                                        Assessing and addressing the human
-                                        rights implications and social impacts
-                                        of business operations.
-                                    </p>
-                                    <p className="mt-3 text-lg leading-[1.56rem] font-medium text-[#666666]">
-                                        <strong className="text-[#333333]">
-                                            Inclusion, Diversity, and Equity
-                                            (IDE) Strategy -
-                                        </strong>{' '}
-                                        Advancing IDE through comprehensive
-                                        diagnostics, pay gap analysis,
-                                        benchmarking, and modeling, to cultivate
-                                        an inclusive culture and drive equitable
-                                        opportunities.
-                                    </p>
-                                    <p className="mt-3 text-lg leading-[1.56rem] font-medium text-[#666666]">
-                                        <strong className="text-[#333333]">
-                                            Governance Maturity Assessment -
-                                        </strong>{' '}
-                                        Evaluating governance structures and
-                                        practices against benchmarks, offering
-                                        insights to enhance transparency,
-                                        accountability, and ESG alignment.
-                                    </p>
-                                    <p className="mt-3 text-lg leading-[1.56rem] font-medium text-[#666666]">
-                                        <strong className="text-[#333333]">
-                                            ESG Governance Due Diligence -
-                                        </strong>{' '}
-                                        Performing thorough governance due
-                                        diligence to ensure robust ESG
-                                        integration, safeguarding against risks
-                                        and reinforcing stakeholder trust.
                                     </p>
                                 </div>
 

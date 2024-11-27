@@ -50,7 +50,7 @@ const DecarbonApproachMobile = ({ sectionRefs }) => {
                                 <p className="font-semibold sm:text-xl leading-[1.625rem] text-[#808080] text-center mt-7">
                                     Utilising insights from our international
                                     carbon removal initiatives, we offer
-                                    decarbonization strategies that minimize
+                                    decarbonisation strategies that minimize
                                     carbon footprints and promote eco-friendly
                                     innovations.
                                 </p>
@@ -91,7 +91,7 @@ const DecarbonApproachMobile = ({ sectionRefs }) => {
                                 <p className="font-semibold leading-[1.625rem] text-[#808080] sm:text-xl text-center mt-7">
                                     Building on our experience developing blue
                                     carbon projects across borders, we
-                                    accelerate supply chain decarbonization,
+                                    accelerate supply chain decarbonisation,
                                     implementing practices that reduce emissions
                                     and foster a sustainable economy
                                 </p>

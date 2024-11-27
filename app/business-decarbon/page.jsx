@@ -5,7 +5,6 @@ import Banner from '../../components/business/Banner';
 import Decarbonization from '../../components/business/Decarbonization';
 import Offset from '../../components/business/Offset';
 import Unlocking from '../../components/business/Unlocking';
-import Clearance from '../../components/business/Clearance';
 import './../../styles/business.css';
 import DecarbonApproach from '@/components/business/DecarbonApproach';
 import useIntersectionObserver from '@/hook/useInerationSidebar';
@@ -24,7 +23,7 @@ export default function Business() {
         { label: 'API Solutions', href: '#bu-2' },
         { label: 'Offtake Agreement', href: '#bu-3' },
         { label: 'Carbon Credits', href: '#bu-4' },
-        { label: 'Environmental Audit', href: '#bu-5' },
+        // { label: 'Environmental Audit', href: '#bu-5' },
     ];
 
     return (
@@ -39,7 +38,6 @@ export default function Business() {
             <Decarbonization sectionRefs={sectionRefs} />
             <Unlocking sectionRefs={sectionRefs} />
             <Offset sectionRefs={sectionRefs} />
-            <Clearance sectionRefs={sectionRefs} />
             <Footer />
         </>
     );

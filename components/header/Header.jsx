@@ -196,7 +196,7 @@ const Navbar = ({ bannerRef, isScrolled, setIsScrolled }) => {
                             </span>
 
                             <div
-                                className={`absolute hidden lg:group-hover:block header-gradient     w-[295px] rounded-lg shadow-lg z-10 ${isScrolled ? 'text-[#2F5738]' : 'text-white'}`}
+                                className={`absolute hidden lg:group-hover:block header-gradient w-[300px] rounded-lg shadow-lg z-10 ${isScrolled ? 'text-[#2F5738]' : 'text-white'}`}
                             >
                                 <div className="h-full w-full backdrop-blur-3xl py-1  px-1 rounded-lg">
                                     <div className="mt-1 py-2 rounded  hover:bg-[#2F5738] hover:text-white">
@@ -217,6 +217,26 @@ const Navbar = ({ bannerRef, isScrolled, setIsScrolled }) => {
                                             className="px-5 py-2"
                                         >
                                             Decarbonisation Services
+                                        </Link>
+                                    </div>
+                                    <div className="mt-1 py-2 rounded  hover:bg-[#2F5738] hover:text-white">
+                                        <Link
+                                            href="/climate-api"
+                                            target="_self"
+                                            rel="noopener noreferrer"
+                                            className="px-5 py-2"
+                                        >
+                                            Climate API Solutions
+                                        </Link>
+                                    </div>
+                                    <div className="mt-1 py-2 rounded  hover:bg-[#2F5738] hover:text-white">
+                                        <Link
+                                            href="/carbon-consultancy"
+                                            target="_self"
+                                            rel="noopener noreferrer"
+                                            className="px-5 py-2"
+                                        >
+                                            Carbon Project Consultancy
                                         </Link>
                                     </div>
                                 </div>
@@ -240,6 +260,26 @@ const Navbar = ({ bannerRef, isScrolled, setIsScrolled }) => {
                                     rel="noopener noreferrer"
                                 >
                                     Decarbonisation Services
+                                </Link>
+                            </div>
+                            <div className="max-lg:group-hover:block hidden mt-2">
+                                {' '}
+                                <Link
+                                    href="/climate-api"
+                                    target="_self"
+                                    rel="noopener noreferrer"
+                                >
+                                    Climate API Solutions
+                                </Link>
+                            </div>
+                            <div className="max-lg:group-hover:block hidden mt-2">
+                                {' '}
+                                <Link
+                                    href="/carbon-consultancy"
+                                    target="_self"
+                                    rel="noopener noreferrer"
+                                >
+                                    Carbon Project Consultancy
                                 </Link>
                             </div>
 
