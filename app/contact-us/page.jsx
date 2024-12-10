@@ -10,6 +10,14 @@ import axiosInstance from '../../utils/service';
 import './../../styles/contact.css';
 import { toast } from 'react-toastify';
 import Footer from '@/components/footer/Footer';
+import Head from 'next/head';
+
+// export async function generateMetadata() {
+//     return {
+//         description:
+//             'Get in touch with Sustainology for expert guidance on carbon projects, ESG services, and carbon credit solutions. Connect with us to take your sustainability goals to the next level.',
+//     };
+// }
 
 export default function ContactUs() {
     const bannerRef = useRef();
@@ -76,6 +84,13 @@ export default function ContactUs() {
 
     return (
         <>
+            {/* <Head>
+                <title>Contact Us</title>
+                <meta
+                    name="description"
+                    content="Get in touch with Sustainology for expert guidance on carbon projects, ESG services, and carbon credit solutions. Connect with us to take your sustainability goals to the next level."
+                />
+            </Head> */}
             <Navbar
                 isScrolled={isScrolled}
                 setIsScrolled={setIsScrolled}

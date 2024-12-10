@@ -21,6 +21,9 @@ import ProjectList from '../components/project-component/ProjectList';
 import OurTechnology from '@/components/home/OurTechnology';
 import Footer from '@/components/footer/Footer';
 import Address from '@/components/address/page';
+import OurServices from '@/components/home/OurServices';
+import Head from 'next/head';
+
 export default function Home() {
     const bannerRef = useRef();
     const sectionRefs = useRef([]);
@@ -44,13 +47,22 @@ export default function Home() {
     }, []);
     return (
         <>
+            <Head>
+                {/* <title>Sustainology - Home</title> */}
+                <meta
+                    name="description"
+                    content="Discover Sustainology: Your trusted partner in Carbon Project Consulting, ESG services, and Carbon Credit Marketplaces. Empowering businesses to achieve sustainability goals with innovative DMRV technology and API solutions."
+                />
+            </Head>
+
             <Navbar
                 bannerRef={bannerRef}
                 isScrolled={isScrolled}
                 setIsScrolled={setIsScrolled}
             />
             <Banner bannerRef={bannerRef} />
-            <NavigateAnim />
+            {/* <NavigateAnim /> */}
+            <OurServices />
             <Accreditations />
             <Commitment />
             <ProjectList setIsScrolled={setIsScrolled} isHome={true} />

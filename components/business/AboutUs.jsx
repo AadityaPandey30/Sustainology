@@ -1,8 +1,44 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 
-const AboutUs = () => {
+if (typeof window !== 'undefined') {
+    gsap.registerPlugin(ScrollTrigger, useGSAP);
+}
+
+const AboutUs = ({ sectionRefs }) => {
+    const itemsRef = useRef([]);
+    const updateActiveClass = (progress, numItems) => {
+        const currentIndex = Math.round(progress * numItems);
+
+        itemsRef.current.forEach((el, i) => {
+            el.classList.remove('active', 'opacity-0');
+            const isCurrent = i === currentIndex;
+            const isNext = i === (currentIndex + 1) % numItems;
+            const isPrevious = i === (currentIndex - 1 + numItems) % numItems;
+            if (!isNext && !isPrevious && !isCurrent) {
+                // If the item is neither the current, next, nor previous, add 'opacity-0'
+                el.classList.add('opacity-0');
+            }
+            if (i === currentIndex) {
+                el.classList.add('active');
+            }
+
+            if (currentIndex === 5) {
+                itemsRef.current[0].classList.add('active');
+                itemsRef.current[0].classList.remove('opacity-0');
+                itemsRef.current[2].classList.add('opacity-0');
+                itemsRef.current[3].classList.add('opacity-0');
+            }
+        });
+    };
     return (
-        <section className="bg-gradient-to-r from-[#c9ddb4b5] to-[#8995ab62] p-2 pb-[5%]">
+        <section
+            id="con-1"
+            ref={(el) => (sectionRefs.current[0] = el)}
+            className="bg-gradient-to-r from-[#c9ddb4b5] to-[#8995ab62] p-2 pb-[5%]"
+        >
             <h2 className="text-4xl md:text-6xl text-[#33496F] font-bold text-center pt-16 pb-12">
                 About Us
             </h2>

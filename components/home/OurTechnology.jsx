@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -11,6 +11,41 @@ if (typeof window !== 'undefined') {
 
 const OurTechnology = ({ id, sectionRefs, refIndex }) => {
     const container = useRef();
+
+    const cleanSeoScript = `{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Sustainology",
+    "item": "https://sustainology.life/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "About Us",
+    "item": "https://sustainology.life/about-us"  
+  },{
+    "@type": "ListItem", 
+    "position": 3, 
+    "name": "Our Technology",
+    "item": "https://sustainology.life/about-us#about-technology"  
+  }]
+}
+`;
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = cleanSeoScript;
+        document.head.appendChild(script);
+
+        return () => {
+            if (script.parentNode) {
+                document.head.removeChild(script);
+            }
+        };
+    }, []);
 
     useGSAP(
         () => {

@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Button from '../common/Button';
+import Image from 'next/image';
 
 const Banner = ({
     bannerRef,
@@ -23,15 +24,26 @@ const Banner = ({
         <section className="banner-container overflow-hidden relative">
             <div className="business_bg" />
             <div className="h-[790.67px] w-full  absolute -z-10">
-                <video
-                    type="video/mp4"
-                    src={`${isDecarbon ? 'https://res.cloudinary.com/deels6aft/video/upload/v1720007155/tefebzxniujq9ochhxzn.mp4' : 'https://res.cloudinary.com/deels6aft/video/upload/v1720007154/bcljzjzemiynludchux3.mp4'}`}
-                    autoPlay
-                    loop
-                    playsInline
-                    muted
-                    className="h-[790.67px] object-cover object-center w-full"
-                />
+                {isEsg || isDecarbon ? (
+                    <video
+                        type="video/mp4"
+                        src={`${isDecarbon ? 'https://res.cloudinary.com/deels6aft/video/upload/v1720007155/tefebzxniujq9ochhxzn.mp4' : 'https://res.cloudinary.com/deels6aft/video/upload/v1720007154/bcljzjzemiynludchux3.mp4'}`}
+                        autoPlay
+                        loop
+                        playsInline
+                        muted
+                        className="h-[790.67px] object-cover object-center w-full"
+                    />
+                ) : (
+                    <Image
+                        src={`${isClimate ? '/images/business/climateapibg.png' : '/images/business/carbonbg.png'}`}
+                        alt="Background"
+                        width={800}
+                        height={1000}
+                        loading="lazy"
+                        className="h-[790.67px] object-cover object-center w-full"
+                    />
+                )}
             </div>
 
             <div className="flex items-center justify-center h-full bg-400">
@@ -85,7 +97,7 @@ const Banner = ({
                     <Link
                         href={button?.href}
                         key={button?.label}
-                        className="bg-[#f5f5f57c] text-center border border-[#C8C8C8] py-[10px] rounded-[40px] w-full block nav-link"
+                        className="bg-[#f5f5f57c] text-center border border-[#C8C8C8] py-[10px] rounded-[40px] w-full block nav-link active:border-[#2A3C5B] active:text-white active:bg-[#2A3C5B] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none focus:text-white focus:bg-[#2A3C5B] focus:border-[#2A3C5B]"
                     >
                         {button?.label}
                     </Link>

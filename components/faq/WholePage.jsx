@@ -119,7 +119,7 @@ const WholePage = () => {
                         return (
                             <div key={category}>
                                 <Button
-                                    className={` w-full lg:w-[156.21px] py-3 px-4 lg:py-[16px] lg:px-[24px] rounded-lg border  font-semibold text-lg  md:leading-[24.41px]
+                                    className={` w-full lg:w-[156.21px] py-3 px-4 lg:py-[16px] lg:px-[24px] rounded-lg border font-semibold text-lg  md:leading-[24.41px]
                                     ${category === filterData ? 'bg-[#60718F] border-[#DCE0E7] text-white' : 'bg-white border-[#CCCCCC] text-[#60718F]'}  capitalize ${index > 0 && ' mt-4 lg:mt-10'}`}
                                     onClick={() => handelFilterClick(category)}
                                 >

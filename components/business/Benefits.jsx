@@ -4,6 +4,14 @@ import { FaArrowRight } from 'react-icons/fa';
 import { PiStarFourFill } from 'react-icons/pi';
 import Link from 'next/link';
 
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
+
+if (typeof window !== 'undefined') {
+    gsap.registerPlugin(ScrollTrigger, useGSAP);
+}
+
 const Benefits = ({ sectionRefs }) => {
     const itemsRef = useRef([]);
     const updateActiveClass = (progress, numItems) => {
@@ -134,7 +142,7 @@ const Benefits = ({ sectionRefs }) => {
                             <FaArrowRight className="pb-1 size-8 pl-4" />
                         </p>
                         <Link href="/contact-us">
-                            <button className="text-xl text-white bg-[#33496F] py-2 px-[12%] rounded-[6px] my-6">
+                            <button className="text-xl text-white bg-[#2F5738] py-2 px-[12%] rounded-[6px] my-6">
                                 Contact Us
                             </button>
                         </Link>

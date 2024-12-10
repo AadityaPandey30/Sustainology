@@ -179,7 +179,7 @@ const Features = ({ sectionRefs }) => {
                     </div>
                 </div>
             </section>
-            <h2 className="text-4xl md:text-6xl text-[#33496F] font-bold text-center py-6">
+            <h2 className="text-4xl md:text-6xl text-[#33496F] font-bold text-center pt-16 pb-6">
                 Simple Steps to Integrate Sustainology API
             </h2>
         </div>

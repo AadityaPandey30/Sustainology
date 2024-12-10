@@ -44,63 +44,66 @@ export default function AboutUs() {
     useEffect(() => {
         setKeyValue(1);
     }, []);
+
     return (
-        <main className="relative overflow-x-hidden">
-            <Navbar
-                bannerRef={bannerRef}
-                isScrolled={isScrolled}
-                setIsScrolled={setIsScrolled}
-            />
-            {/* <Banner bannerRef={bannerRef} /> */}
-            <AboutUsBanner bannerRef={bannerRef} />
-            <MissionVision sectionRefs={sectionRefs} />
-            <OurValues sectionRefs={sectionRefs} />
-            <Founders
-                setOpenDetail={setOpenDetail}
-                title={'Founders'}
-                data={founderTempData}
-                setModalData={setModalData}
-                id="founders"
-                sectionRefs={sectionRefs}
-                refIndex={2}
-            />
-            <Founders
-                setOpenDetail={() => ''}
-                title={'Partners'}
-                data={advisorData}
-                setModalData={() => ''}
-                id="advisors"
-                sectionRefs={sectionRefs}
-                refIndex={3}
-            />
-            <StrategicPartners sectionRefs={sectionRefs} />
-            <div className="accreditations-section mt-16 bottom-section">
-                <TrustedBy />
-
-                <Customer testimonials={testimonials} isAbout={true} />
-            </div>
-
-            <div
-                id="about-technology"
-                ref={(el) => {
-                    sectionRefs.current[5] = el;
-                }}
-            >
-                <OurTechnology
-                    sectionRefs={sectionRefs}
-                    refIndex={5}
-                    key={keyValue}
+        <>
+            <main className="relative overflow-x-hidden">
+                <Navbar
+                    bannerRef={bannerRef}
+                    isScrolled={isScrolled}
+                    setIsScrolled={setIsScrolled}
                 />
-            </div>
+                {/* <Banner bannerRef={bannerRef} /> */}
+                <AboutUsBanner bannerRef={bannerRef} />
+                <MissionVision sectionRefs={sectionRefs} />
+                <OurValues sectionRefs={sectionRefs} />
+                <Founders
+                    setOpenDetail={setOpenDetail}
+                    title={'Founders'}
+                    data={founderTempData}
+                    setModalData={setModalData}
+                    id="founders"
+                    sectionRefs={sectionRefs}
+                    refIndex={2}
+                />
+                <Founders
+                    setOpenDetail={() => ''}
+                    title={'Partners'}
+                    data={advisorData}
+                    setModalData={() => ''}
+                    id="advisors"
+                    sectionRefs={sectionRefs}
+                    refIndex={3}
+                />
+                <StrategicPartners sectionRefs={sectionRefs} />
+                <div className="accreditations-section mt-16 bottom-section">
+                    <TrustedBy />
 
-            <FounderDetailsModal
-                setDetailsModal={setOpenDetail}
-                detailModal={openDetail}
-                modalData={modalData}
-            />
-            <Address />
+                    <Customer testimonials={testimonials} isAbout={true} />
+                </div>
 
-            <Footer />
-        </main>
+                <div
+                    id="about-technology"
+                    ref={(el) => {
+                        sectionRefs.current[5] = el;
+                    }}
+                >
+                    <OurTechnology
+                        sectionRefs={sectionRefs}
+                        refIndex={5}
+                        key={keyValue}
+                    />
+                </div>
+
+                <FounderDetailsModal
+                    setDetailsModal={setOpenDetail}
+                    detailModal={openDetail}
+                    modalData={modalData}
+                />
+                <Address />
+
+                <Footer />
+            </main>
+        </>
     );
 }

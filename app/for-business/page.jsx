@@ -17,6 +17,41 @@ import EsgStartegy from '@/components/esg-strategy/strategy';
 import Footer from '@/components/footer/Footer';
 
 export default function Business() {
+    const cleanSeoScript = `{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Sustainology",
+    "item": "https://sustainology.life/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "For Business",
+    "item": "https://sustainology.life/for-business"  
+  },{
+    "@type": "ListItem", 
+    "position": 3, 
+    "name": "ESG Services",
+    "item": "https://sustainology.life/for-business"  
+  }]
+}
+`;
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = cleanSeoScript;
+        document.head.appendChild(script);
+
+        return () => {
+            if (script.parentNode) {
+                document.head.removeChild(script);
+            }
+        };
+    }, []);
+
     const bannerRef = useRef();
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -46,6 +81,12 @@ export default function Business() {
     }, []);
     return (
         <>
+            {/* <Head>
+                <meta
+                    name="description"
+                    content="Explore Sustainology ESG Services: Tailored solutions to enhance sustainability, improve ESG performance, achieve net-zero goals, and conduct comprehensive product life cycle assessments (LCA)."
+                />
+            </Head> */}
             <Navbar
                 bannerRef={bannerRef}
                 isScrolled={isScrolled}

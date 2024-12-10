@@ -1,5 +1,18 @@
 const foundersTemp = [
     {
+        name: 'Mr. Pratik Kumar',
+        image: '/images/founders/pratik.jpeg',
+        subTitle: 'Head of Operations and Finance',
+        description:
+            "Mr. Pratik Kumar, a visionary entrepreneur with extensive experience in the general trading field, manages operations and finance. Her strategic foresight and ability to navigate market trends ensure Sustainology's operational efficiency and financial health, supporting its sustainable growth and excellence.",
+        logo: [
+            '/images/founders/logo/Mrs_Rupal/mb.png',
+            '/images/founders/logo/Mrs_Rupal/radius.png',
+            '/images/founders/logo/Mrs_Rupal/gemini.png',
+        ],
+        title: 'founder',
+    },
+    {
         name: 'Mr.Ansh Kumar',
         image: '/images/founders/ansh-detail.png',
         subTitle: ' Head of Vision and Strategy',
@@ -66,19 +79,6 @@ const foundersTemp = [
             '/images/founders/logo/Kevin/treetology.png',
         ],
         title: 'co-founder',
-    },
-    {
-        name: 'Mr. Pratik Kumar',
-        image: '/images/founders/pratik.jpeg',
-        subTitle: 'Head of Operations and Finance',
-        description:
-            "Mr. Pratik Kumar, a visionary entrepreneur with extensive experience in the general trading field, manages operations and finance. Her strategic foresight and ability to navigate market trends ensure Sustainology's operational efficiency and financial health, supporting its sustainable growth and excellence.",
-        logo: [
-            '/images/founders/logo/Mrs_Rupal/mb.png',
-            '/images/founders/logo/Mrs_Rupal/radius.png',
-            '/images/founders/logo/Mrs_Rupal/gemini.png',
-        ],
-        title: 'founder',
     },
 ];
 

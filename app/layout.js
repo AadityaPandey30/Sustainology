@@ -15,7 +15,7 @@ const inter = Darker_Grotesque({ subsets: ['latin'] });
 export const metadata = {
     title: 'Sustainology',
     description:
-        'Transform your sustainability journey with Sustainology Climate Solutions, an ISO 14064 company dedicated to reducing global carbon emissions. Access our high-quality carbon credits marketplace, expert carbon project consultancy, comprehensive ESG services, and advanced DMRV technology. Achieve net zero with our innovative solutions...',
+        'Discover Sustainology: Your trusted partner in Carbon Project Consulting, ESG services, and Carbon Credit Marketplaces. Empowering businesses to achieve sustainability goals with innovative DMRV technology and API solutions.',
 };
 
 const organizationData = {
@@ -29,6 +29,8 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <Head>
+                <title>{metadata.title}</title>
+                <meta name="description" content={metadata.description} />
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="keywords" content="sample, meta, tag, HTML"></meta>
                 <meta name="author" content="Your Name"></meta>

@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import { useSwipeable } from 'react-swipeable';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { useGSAP } from '@gsap/react';
 
-const DevelopmentProcess = () => {
+if (typeof window !== 'undefined') {
+    gsap.registerPlugin(ScrollTrigger, useGSAP);
+}
+
+const DevelopmentProcess = ({ sectionRefs }) => {
     const [activeSection, setActiveSection] = useState('car-1');
 
+    const itemsRef = useRef([]);
     const sections = ['car-1', 'car-2'];
 
     const handleSwipe = (direction) => {
@@ -23,10 +31,37 @@ const DevelopmentProcess = () => {
         trackMouse: true, // Enables swipe detection with a mouse
     });
 
+    const updateActiveClass = (progress, numItems) => {
+        const currentIndex = Math.round(progress * numItems);
+
+        itemsRef.current.forEach((el, i) => {
+            el.classList.remove('active', 'opacity-0');
+            const isCurrent = i === currentIndex;
+            const isNext = i === (currentIndex + 1) % numItems;
+            const isPrevious = i === (currentIndex - 1 + numItems) % numItems;
+            if (!isNext && !isPrevious && !isCurrent) {
+                // If the item is neither the current, next, nor previous, add 'opacity-0'
+                el.classList.add('opacity-0');
+            }
+            if (i === currentIndex) {
+                el.classList.add('active');
+            }
+
+            if (currentIndex === 2) {
+                itemsRef.current[0].classList.add('active');
+                itemsRef.current[0].classList.remove('opacity-0');
+                itemsRef.current[2].classList.add('opacity-0');
+                itemsRef.current[3].classList.add('opacity-0');
+            }
+        });
+    };
+
     return (
         <div
             {...handlers}
             className="relative bg-gradient-to-b from-[#98BA76] to-[#DCE0E7] py-[3%] overflow-hidden"
+            id="con-2"
+            ref={(el) => (sectionRefs.current[1] = el)}
         >
             <section>
                 {/* Background Image */}
@@ -41,13 +76,33 @@ const DevelopmentProcess = () => {
     ${activeSection === 'car-1' ? 'translate-x-0' : '-translate-x-[100%]'}`}
                 />
 
-                <h2 className="text-4xl md:text-6xl md:text-5xl text-[#33496F] font-bold text-left py-6 pl-[3%]">
+                <h2 className="text-4xl md:text-6xl text-[#33496F] font-bold text-left py-6 pl-[3%]">
                     The Development Process
                 </h2>
                 <hr className="border-black border-1 mx-[3%] max-w-7xl" />
-
                 {/* Sections Wrapper */}
                 <div className="relative h-fit">
+                    {/* Navigation Buttons */}
+                    <div className="flex w-fit m-auto mt-8">
+                        <button onClick={() => setActiveSection('car-1')}>
+                            <div
+                                className={`w-4 h-4 rounded-full m-2 ${
+                                    activeSection === 'car-1'
+                                        ? 'bg-[#33496F]'
+                                        : 'bg-[#999999]'
+                                } border-black`}
+                            ></div>
+                        </button>
+                        <button onClick={() => setActiveSection('car-2')}>
+                            <div
+                                className={`w-4 h-4 rounded-full m-2 ${
+                                    activeSection === 'car-2'
+                                        ? 'bg-[#33496F]'
+                                        : 'bg-[#999999]'
+                                } border-black`}
+                            ></div>
+                        </button>
+                    </div>
                     {/* First Section */}
                     <div
                         id="car-1"
@@ -199,8 +254,8 @@ const DevelopmentProcess = () => {
                         <div
                             className={`w-4 h-4 rounded-full m-2 ${
                                 activeSection === 'car-1'
-                                    ? 'bg-black'
-                                    : 'bg-[#747279]'
+                                    ? 'bg-[#33496F]'
+                                    : 'bg-[#999999]'
                             } border-black`}
                         ></div>
                     </button>
@@ -208,8 +263,8 @@ const DevelopmentProcess = () => {
                         <div
                             className={`w-4 h-4 rounded-full m-2 ${
                                 activeSection === 'car-2'
-                                    ? 'bg-black'
-                                    : 'bg-[#747279]'
+                                    ? 'bg-[#33496F]'
+                                    : 'bg-[#999999]'
                             } border-black`}
                         ></div>
                     </button>

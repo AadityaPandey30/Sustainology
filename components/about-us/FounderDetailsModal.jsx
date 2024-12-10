@@ -67,7 +67,7 @@ const FounderDetailsModal = ({ setDetailsModal, detailModal, modalData }) => {
                         <div className="fixed right-8 -z-10 h-[120px] width-[120px] bottom-0  ">
                             <Image
                                 loading="lazy"
-                                priority={true}
+                                // priority={true}
                                 src="/founder-gif.gif"
                                 className="h-full w-full"
                                 alt="founders-GIFS"

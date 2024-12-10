@@ -26,9 +26,44 @@ const responsive = {
 };
 
 const StrategicPartners = ({ sectionRefs }) => {
+    const cleanSeoScript = `{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Sustainology",
+    "item": "https://sustainology.life/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "About Us",
+    "item": "https://sustainology.life/about-us"  
+  },{
+    "@type": "ListItem", 
+    "position": 3, 
+    "name": "Partners",
+    "item": "https://sustainology.life/about-us#partners"  
+  }]
+}`;
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = cleanSeoScript;
+        document.head.appendChild(script);
+
+        return () => {
+            if (script.parentNode) {
+                document.head.removeChild(script);
+            }
+        };
+    }, []);
+
     const accreditationResponse = useFetch({
         url: '/accreditations/get-all-active',
     });
+
     const partnersResponse = useFetch({ url: '/partner/get-all-active' });
     const partnersData = partnersResponse?.data?.response || [];
     const accreditations = accreditationResponse?.data?.response || [];
@@ -53,6 +88,7 @@ const StrategicPartners = ({ sectionRefs }) => {
             }
         };
     }, []);
+
     return (
         <selection
             className="relative"

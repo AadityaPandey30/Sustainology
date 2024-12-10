@@ -13,8 +13,8 @@ const TrustedBy = () => {
             <h2 className="font-bold md:text-[52px] md:leading-[70.51px] text-center text-[#2A3C5B] text-4xl">
                 Trusted By
             </h2>
-            <div className="flex flex-col w-full lg:px-[95px] sm:px-[100px]    items-center ">
-                <div className=" bg-white  flex   rounded-t-[17.59px] w-full  mx-4  mt-6 px-2 pb-4 ">
+            <div className="flex flex-col w-full lg:px-[95px] sm:px-[100px] items-center ">
+                <div className=" bg-white flex rounded-t-[17.59px] w-full mx-4 mt-6 px-2 pb-4 ">
                     <div className="w-full  overflow-hidden ">
                         <Marquee speed={100} autoFill>
                             <div className="flex gap-16">

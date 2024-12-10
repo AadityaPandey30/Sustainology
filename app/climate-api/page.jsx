@@ -7,9 +7,17 @@ import Features from '@/components/business/Features';
 import Integration from '@/components/business/Integration';
 import Benefits from '@/components/business/Benefits';
 import useIntersectionObserver from '@/hook/useInerationSidebar';
+import Head from 'next/head';
 
 import '../../styles/faq.css';
 import Footer from '@/components/footer/Footer';
+
+// export async function generateMetadata() {
+//     return {
+//         description:
+//             'Explore Sustainology Climate API: Seamlessly calculate, track, and offset carbon emissions with our advanced API solutions. Empower your business with real-time sustainability insights.',
+//     };
+// }
 
 export default function ClimateAPIPage() {
     const bannerRef = useRef();
@@ -27,6 +35,12 @@ export default function ClimateAPIPage() {
 
     return (
         <>
+            <Head>
+                <meta
+                    name="description"
+                    content="Explore Sustainology Climate API: Seamlessly calculate, track, and offset carbon emissions with our advanced API solutions. Empower your business with real-time sustainability insights."
+                />
+            </Head>
             <Navbar
                 bannerRef={bannerRef}
                 isScrolled={isScrolled}

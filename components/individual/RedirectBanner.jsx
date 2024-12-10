@@ -1,8 +1,42 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from '../common/Button';
 import Link from 'next/link';
 
 const RedirectBanner = ({ sectionRefs }) => {
+    const cleanSeoScript = `{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Sustainology",
+    "item": "https://sustainology.life/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "For Individuals",
+    "item": "https://sustainology.life/for-individual"  
+  },{
+    "@type": "ListItem", 
+    "position": 3, 
+    "name": "Treetology",
+    "item": "https://sustainology.life/for-individual#individual-treetology"  
+  }]
+}`;
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = cleanSeoScript;
+        document.head.appendChild(script);
+
+        return () => {
+            if (script.parentNode) {
+                document.head.removeChild(script);
+            }
+        };
+    }, []);
+
     return (
         <section
             className="redirect-banner-container md:mt-40 mt-20"

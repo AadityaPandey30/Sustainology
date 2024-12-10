@@ -10,6 +10,7 @@ import AboutUs from '@/components/business/AboutUs';
 import DevelopmentProcess from '@/components/business/DevelopmentProcess';
 import AdditionalServices from '@/components/business/AdditionalServices';
 import CaseStudies from '@/components/business/CaseStudies';
+import useIntersectionObserver from '@/hook/useInerationSidebar';
 
 export default function ClimateAPIPage() {
     const bannerRef = useRef();
@@ -17,7 +18,7 @@ export default function ClimateAPIPage() {
 
     const sectionRefs = useRef([]);
 
-    // useIntersectionObserver(sectionRefs, 0.6);
+    useIntersectionObserver(sectionRefs, 0.6);
 
     const buttons = [
         { label: 'About Us', href: '#con-1' },
@@ -33,13 +34,13 @@ export default function ClimateAPIPage() {
                 setIsScrolled={setIsScrolled}
             />
             <Banner bannerRef={bannerRef} buttons={buttons} />
-            <AboutUs />
-            <DevelopmentProcess />
-            <div className='bg-gradient-to-br from-[#c9ddb4cc] to-[#ffffff,#8995AB,#C9DDB4]'>
-                <AdditionalServices />
-                <CaseStudies />
+            <AboutUs sectionRefs={sectionRefs} />
+            <DevelopmentProcess sectionRefs={sectionRefs} />
+            <div className="bg-gradient-to-br from-[#e7ffcecc] to-[#ffffff,#e7f1ff]">
+                <AdditionalServices sectionRefs={sectionRefs} />
+                <CaseStudies sectionRefs={sectionRefs} />
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 }

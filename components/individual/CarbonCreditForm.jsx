@@ -650,6 +650,40 @@ const CarbonCreditForm = ({
         }
     };
 
+    const cleanSeoScript = `{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Sustainology",
+    "item": "https://sustainology.life/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "For Individuals",
+    "item": "https://sustainology.life/for-individual"  
+  },{
+    "@type": "ListItem", 
+    "position": 3, 
+    "name": "Support Projects",
+    "item": "https://sustainology.life/for-individual#support-project"  
+  }]
+}`;
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = cleanSeoScript;
+        document.head.appendChild(script);
+
+        return () => {
+            if (script.parentNode) {
+                document.head.removeChild(script);
+            }
+        };
+    }, []);
+
     return (
         <>
             <div className="w-full max-sm:text-center">

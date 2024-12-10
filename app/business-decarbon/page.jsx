@@ -9,8 +9,43 @@ import './../../styles/business.css';
 import DecarbonApproach from '@/components/business/DecarbonApproach';
 import useIntersectionObserver from '@/hook/useInerationSidebar';
 import Footer from '@/components/footer/Footer';
+import Head from 'next/head';
 
 export default function Business() {
+    const cleanSeoScript = `{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Sustainology",
+    "item": "https://sustainology.life/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "For Business",
+    "item": "https://sustainology.life/for-business"  
+  },{
+    "@type": "ListItem", 
+    "position": 3, 
+    "name": "Decarbonisation Services",
+    "item": "https://sustainology.life/business-decarbon"  
+  }]
+}`;
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = cleanSeoScript;
+        document.head.appendChild(script);
+
+        return () => {
+            if (script.parentNode) {
+                document.head.removeChild(script);
+            }
+        };
+    }, []);
+
     const bannerRef = useRef();
     const [isScrolled, setIsScrolled] = useState(false);
 

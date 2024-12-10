@@ -16,15 +16,12 @@ const ProjectList = ({ setIsScrolled, isHome = false }) => {
     const imageRef = useRef();
 
     const styles = {
-        // backgroundImage: `url(${imageUrl})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '970px', // Adjust the height as needed
         maxWidth: '100%',
         zIndex: -10,
-
         transition: 'background-image 2s ease-in-out', // Adjust the transition properties
-
         backgroundImage: `linear-gradient(90.24deg, rgba(9, 9, 9, 0.65) 0.22%, rgba(9, 9, 9, 0.65)0.22%), url(${imageUrl})`,
     };
 
@@ -35,7 +32,6 @@ const ProjectList = ({ setIsScrolled, isHome = false }) => {
         height: '970px', // Adjust the height as needed
         maxWidth: '100%',
         zIndex: -20,
-
         backgroundImage: 'linear-gradient(180deg, #E0EBD4 0%, #FFFFFF 97.75%)',
     };
 
@@ -55,6 +51,35 @@ const ProjectList = ({ setIsScrolled, isHome = false }) => {
         setImageUrl(image || projectData?.[0]?.images[0].image);
         setIsScrolled(false);
     };
+
+    const cleanSeoScript = `{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Sustainology",
+    "item": "https://sustainology.life/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "Marketplace",
+    "item": "https://sustainology.life/projects"  
+  }]
+}`;
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = cleanSeoScript;
+        document.head.appendChild(script);
+
+        return () => {
+            if (script.parentNode) {
+                document.head.removeChild(script);
+            }
+        };
+    }, []);
 
     return (
         <section className="relative">

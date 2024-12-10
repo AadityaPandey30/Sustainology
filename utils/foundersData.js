@@ -1,5 +1,19 @@
 const founders = [
     {
+        name: 'MR. PRATIK KUMAR',
+        image: '/images/founders/pratik.jpg',
+        subTitle: 'Head of Strategic Partnerships and Stakeholder Relations',
+        description:
+            "Mr.Pratik Kumar, with a dynamic background spanning real estate, aviation, and diverse industries, drives strategic partnerships and stakeholder relations at Sustainology. His entrepreneurial journey includes leadership roles in multiple ventures like FlyBig Aviation, Orbit Coatings, Radius Circle, and Gemini Impex. Pratik's multidisciplinary expertise and strong industry connections foster growth and collaboration, shaping the company’s future and impact.",
+        logo: [
+            '/images/founders/logo/Mrs_Rupal/radius.png',
+            '/images/founders/logo/Mrs_Rupal/gemini.png',
+            '/images/founders/logo/Ansh/fly.png',
+            '/images/founders/logo/Majid/orbit.png',
+        ],
+        title: 'founder',
+    },
+    {
         name: 'Mr.Ansh Kumar',
         image: '/images/founders/ansh-detail.png',
         subTitle: ' Head of Vision and Strategy',
@@ -66,19 +80,6 @@ const founders = [
             '/images/founders/logo/Kevin/treetology.png',
         ],
         title: 'co-founder',
-    },
-    {
-        name: 'MRS. RUPAL KUMAR',
-        image: '/images/founders/rupal-detail.png',
-        subTitle: 'Head of Operations and Finance',
-        description:
-            "Rupal Kumar, a visionary entrepreneur with extensive experience in the general trading field, manages operations and finance. Her strategic foresight and ability to navigate market trends ensure Sustainology's operational efficiency and financial health, supporting its sustainable growth and excellence.",
-        logo: [
-            '/images/founders/logo/Mrs_Rupal/mb.png',
-            '/images/founders/logo/Mrs_Rupal/radius.png',
-            '/images/founders/logo/Mrs_Rupal/gemini.png',
-        ],
-        title: 'founder',
     },
 ];
 
