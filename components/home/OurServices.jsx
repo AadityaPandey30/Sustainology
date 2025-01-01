@@ -24,12 +24,12 @@ const OurServices = () => {
                     </p>
 
                     <Image
-                        src="/images/home/OurServeImage.png"
+                        src="/images/home/ourservices1.png"
                         alt="Background"
-                        width={600}
-                        height={400}
+                        width={800}
+                        height={500}
                         layout="responsive"
-                        className="w-full md:h-[28vh] md:mt-7"
+                        className="w-full md:h-[28vh] md:mt-10"
                     />
                 </div>
                 <div className="rounded-lg p-5 bg-[#e6faff] shadow-md m-3 basis-2/5">
@@ -45,7 +45,7 @@ const OurServices = () => {
                         environmental impact while driving financial returns.
                     </p>
                     <Image
-                        src="/images/home/OurServeImage2.png"
+                        src="/images/home/ourservices2.png"
                         alt="Background"
                         width={800}
                         height={400}
@@ -55,27 +55,7 @@ const OurServices = () => {
                 </div>
             </div>
 
-            <div className="md:flex">
-                <div className="rounded-lg p-5 bg-[#e6faff] shadow-md m-3 basis-2/5">
-                    <p className="text-2xl md:text-3xl text-[#2A3C5B] mb-2">
-                        ESG Consultancy
-                    </p>
-                    <p className="text-[#747279] my-3 text-lg md:text-xl">
-                        Achieve sustainability with comprehensive ESG strategies
-                        tailored to your business. We offer a clear roadmap to
-                        meet compliance, reduce environmental impact, and
-                        improve social governance. Lead with purpose while
-                        staying ahead in today’s eco-conscious market.
-                    </p>
-                    <Image
-                        src="/images/home/OurServeImage2.png"
-                        alt="Background"
-                        width={800}
-                        height={400}
-                        layout="responsive"
-                        className="w-full md:h-full"
-                    />
-                </div>
+            <div className="md:flex-row-reverse md:flex">
                 <div className="rounded-lg p-5 bg-[#f6f5ec] shadow-md m-3 basis-3/5">
                     <p className="text-2xl md:text-3xl text-[#2A3C5B] mb-2">
                         Carbon Credit Marketplace
@@ -89,12 +69,32 @@ const OurServices = () => {
                         your sustainability goals.
                     </p>
                     <Image
-                        src="/images/home/OurServeImage.png"
+                        src="/images/home/ourservices4.png"
                         alt="Background"
                         width={800}
                         height={400}
                         layout="responsive"
-                        className="w-full md:h-full md:mt-7"
+                        className="w-full md:h-full md:mt-10 rounded-xl"
+                    />
+                </div>
+                <div className="rounded-lg p-5 bg-[#e6faff] shadow-md m-3 basis-2/5">
+                    <p className="text-2xl md:text-3xl text-[#2A3C5B] mb-2">
+                        ESG Consultancy
+                    </p>
+                    <p className="text-[#747279] my-3 text-lg md:text-xl">
+                        Achieve sustainability with comprehensive ESG strategies
+                        tailored to your business. We offer a clear roadmap to
+                        meet compliance, reduce environmental impact, and
+                        improve social governance. Lead with purpose while
+                        staying ahead in today’s eco-conscious market.
+                    </p>
+                    <Image
+                        src="/images/home/ourservices3.png"
+                        alt="Background"
+                        width={800}
+                        height={400}
+                        layout="responsive"
+                        className="w-full md:h-full"
                     />
                 </div>
             </div>

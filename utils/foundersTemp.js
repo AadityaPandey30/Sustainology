@@ -1,18 +1,5 @@
 const foundersTemp = [
     {
-        name: 'Mr. Pratik Kumar',
-        image: '/images/founders/pratik.jpeg',
-        subTitle: 'Head of Operations and Finance',
-        description:
-            "Mr. Pratik Kumar, a visionary entrepreneur with extensive experience in the general trading field, manages operations and finance. Her strategic foresight and ability to navigate market trends ensure Sustainology's operational efficiency and financial health, supporting its sustainable growth and excellence.",
-        logo: [
-            '/images/founders/logo/Mrs_Rupal/mb.png',
-            '/images/founders/logo/Mrs_Rupal/radius.png',
-            '/images/founders/logo/Mrs_Rupal/gemini.png',
-        ],
-        title: 'founder',
-    },
-    {
         name: 'Mr.Ansh Kumar',
         image: '/images/founders/ansh-detail.png',
         subTitle: ' Head of Vision and Strategy',
@@ -79,6 +66,20 @@ const foundersTemp = [
             '/images/founders/logo/Kevin/treetology.png',
         ],
         title: 'co-founder',
+    },
+    {
+        name: 'MS. SAMIKSHA SATPUTE',
+        image: '/advisor/Samiksha Satpute.png',
+        subTitle: 'Chief Strategy Officer',
+        description:
+            'Samiksha Satpute brings a dynamic blend of tech expertise and strategic leadership to Sustainology. With prior experience as a software developer at Lenovo and an internship at ITC Infotech, she combines technical acumen with business insight. As the Campus Director of the Hult Prize at VTU, she demonstrated a flair for innovation and impact-driven initiatives. Her engagements at COP28 in Dubai and COP29 in Baku have further enriched her perspective on global climate policies, shaping Sustainology’s path toward sustainable growth.',
+        logo: [
+            '/images/founders/logo/Mrs_Rupal/VTU.png',
+            '/images/founders/logo/Mrs_Rupal/Lenovo.png',
+            '/images/founders/logo/Mrs_Rupal/Hult.png',
+            '/images/founders/logo/Mrs_Rupal/ITC.png',
+        ],
+        title: 'founder',
     },
 ];
 

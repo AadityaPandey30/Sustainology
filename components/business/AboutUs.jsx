@@ -56,12 +56,13 @@ const AboutUs = ({ sectionRefs }) => {
             </p>
             <div className="mx-auto w-[90%] max-w-6xl p-8 bg-[#33496F] rounded-[15px] my-8 text-center">
                 <p className="text-sm md:text-3xl text-white">
-                    Xx tonnes of CO2 emission reduction estimated by 2030 
+                    18,709,518 tonnes of CO2 emission reduction estimated by
+                    2030 
                 </p>
             </div>
             <div className="mx-auto w-[90%] max-w-6xl p-8 bg-[#33496F] rounded-[15px] my-8 text-center">
                 <p className="text-sm md:text-3xl text-white">
-                    Xx million hectares of Nature-based carbon assets under
+                    413,895 million hectares of Nature-based carbon assets under
                     management 
                 </p>
             </div>

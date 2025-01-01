@@ -30,15 +30,10 @@ const advisorData = [
         title: 'partner',
     },
     {
-        name: 'Ms. Samiksha Satpute',
-        image: '/advisor/Samiksha Satpute.png',
+        name: 'Mr. Neal Shah',
+        image: '/advisor/neil.jpg',
         title: 'partner',
     },
-    // {
-    //     name: 'Mr. Colin Francis',
-    //     image: '/advisor/colin.jpeg',
-    //     title: 'partner',
-    // },
     {
         name: 'Mr. Rohan JAGDALE',
         image: '/advisor/Rohan.jpeg',

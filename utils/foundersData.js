@@ -1,19 +1,5 @@
 const founders = [
     {
-        name: 'MR. PRATIK KUMAR',
-        image: '/images/founders/pratik.jpg',
-        subTitle: 'Head of Strategic Partnerships and Stakeholder Relations',
-        description:
-            "Mr.Pratik Kumar, with a dynamic background spanning real estate, aviation, and diverse industries, drives strategic partnerships and stakeholder relations at Sustainology. His entrepreneurial journey includes leadership roles in multiple ventures like FlyBig Aviation, Orbit Coatings, Radius Circle, and Gemini Impex. Pratik's multidisciplinary expertise and strong industry connections foster growth and collaboration, shaping the company’s future and impact.",
-        logo: [
-            '/images/founders/logo/Mrs_Rupal/radius.png',
-            '/images/founders/logo/Mrs_Rupal/gemini.png',
-            '/images/founders/logo/Ansh/fly.png',
-            '/images/founders/logo/Majid/orbit.png',
-        ],
-        title: 'founder',
-    },
-    {
         name: 'Mr.Ansh Kumar',
         image: '/images/founders/ansh-detail.png',
         subTitle: ' Head of Vision and Strategy',
@@ -80,6 +66,20 @@ const founders = [
             '/images/founders/logo/Kevin/treetology.png',
         ],
         title: 'co-founder',
+    },
+    {
+        name: 'MS. SAMIKSHA SATPUTE',
+        image: '/advisor/Samiksha Satpute.png',
+        subTitle: 'Chief Strategy Officer',
+        description:
+            'Samiksha Satpute brings a dynamic blend of tech expertise and strategic leadership to Sustainology. With prior experience as a software developer at Lenovo and an internship at ITC Infotech, she combines technical acumen with business insight. As the Campus Director of the Hult Prize at VTU, she demonstrated a flair for innovation and impact-driven initiatives. Her engagements at COP28 in Dubai and COP29 in Baku have further enriched her perspective on global climate policies, shaping Sustainology’s path toward sustainable growth.',
+        logo: [
+            '/images/founders/logo/Mrs_Rupal/VTU.png',
+            '/images/founders/logo/Mrs_Rupal/Lenovo.png',
+            '/images/founders/logo/Mrs_Rupal/Hult.png',
+            '/images/founders/logo/Mrs_Rupal/ITC.png',
+        ],
+        title: 'founder',
     },
 ];
 

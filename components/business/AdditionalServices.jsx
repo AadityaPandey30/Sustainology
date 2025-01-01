@@ -11,8 +11,8 @@ const AdditionalServices = () => {
                 <div className=" flex rounded-t-[17.59px] w-full mx-4 mt-6 px-2 pb-4 ">
                     <div className="w-full  overflow-hidden ">
                         <Marquee speed={100} autoFill>
-                            <div className="flex gap-16">
-                                <div className="h-[72px] mt-3 mx-10">
+                            <div className="flex gap-8">
+                                <div className="h-[80px] mt-3 mx-8">
                                     <Image
                                         loading="lazy"
                                         src="/images/business/logos/tprLogo.png"
@@ -26,7 +26,7 @@ const AdditionalServices = () => {
                                         width={225}
                                     />
                                 </div>
-                                <div className="h-[72px] mt-3 mx-10">
+                                <div className="h-[72px] mt-3 mx-8">
                                     <Image
                                         loading="lazy"
                                         src="/images/business/logos/logo19.png"
@@ -40,7 +40,7 @@ const AdditionalServices = () => {
                                         width={225}
                                     />
                                 </div>
-                                <div className="h-[72px] mt-3 mx-10">
+                                <div className="h-[72px] mt-3 mx-8">
                                     <Image
                                         loading="lazy"
                                         src="/images/business/logos/logo20.png"
@@ -54,7 +54,7 @@ const AdditionalServices = () => {
                                         width={225}
                                     />
                                 </div>
-                                <div className="h-[72px] mt-3 mx-10">
+                                <div className="h-[72px] mt-3 mx-8">
                                     <Image
                                         loading="lazy"
                                         src="/images/business/logos/logo22.png"
@@ -68,7 +68,7 @@ const AdditionalServices = () => {
                                         width={225}
                                     />
                                 </div>
-                                <div className="h-[72px] mt-3 mx-10">
+                                <div className="h-[72px] mt-3 mx-8">
                                     <Image
                                         loading="lazy"
                                         src="/images/business/logos/logo21.png"

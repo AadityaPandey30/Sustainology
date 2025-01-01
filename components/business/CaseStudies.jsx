@@ -76,7 +76,7 @@ const CaseStudies = ({ sectionRefs }) => {
                     <div className="md:flex w-fit m-auto">
                         <Image
                             loading="lazy"
-                            src="/images/business/sundar.png"
+                            src="/images/business/sunder.png"
                             alt="Sundarbans"
                             width={1000}
                             height={1000}
@@ -168,7 +168,7 @@ const CaseStudies = ({ sectionRefs }) => {
                     <div className="md:flex w-fit m-auto">
                         <Image
                             loading="lazy"
-                            src="/images/business/sundar.png"
+                            src="/images/business/siber.png"
                             alt="Sundarbans"
                             width={1000}
                             height={1000}
